@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="This is Alfred's personal portfolio to showcase his skills in web development and multimedia arts">
+  <!-- css files for styling -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- css file for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- to add icon at the tab -->
+  <link rel="icon" type="image/x-icon" href="/assets/alfie-icon.ico">
+
+  <!-- to add animations on the webpage -->
+  <script src="scripts/script.js" defer></script>
+  <!-- to add carousel animation on the works tab -->
+  <script src="scripts/carousel.js" defer></script>
+  <!-- to connect google sheets to website contact form -->
+  <script src="scripts/contact-form.js" defer></script>
+
+
+  <title>Alfie PH</title>
+</head>
+
+<body>
+
+
+  <div class="container">
+    <header>
+      <!-- navigation panel -->
+      <section id="navbar">
+        <nav>
+          <a href="#"><img class="logo" src="assets/alfie-logo-small.png" alt="Logo" /></a>
+          <ul id="sidenav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#services" class="active">Services</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </section>
+
+      <!-- home tab -->
+      <section id="home">
+        <div class="left">
+          <h1>
+            Imagining solutions for <span> digital world.</span>
+          </h1>
+          <h5>I am Alfred. Web Developer.</h5>
+          <div class="socials-wrapper">
+
+            <div class="gmail">
+              <a href="mailto:johnalfredpinero@gmail.com"><i class="fa-solid fa-envelope" id="social-icon"></i></a>
+            </div>
+
+            <div class="linkedin">
+              <a href="https://www.linkedin.com/in/johnalfredpiñero"><i class="fa-brands fa-linkedin"
+                  id="social-icon"></i></a>
+            </div>
+
+            <div class="facebook">
+              <a href="https://www.facebook.com/AlfieArtsPH"><i class="fa-brands fa-facebook" id="social-icon"></i></a>
+            </div>
+
+
+            <div class="github">
+              <a href="https://github.com/alfred0017" id="social-icon"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+          </div>
+
+          <a href="#about"><i class="fa fa-angle-down"></i></a>
+
+        </div>
+
+        <div class="right">
+
+          <img src="assets/alfie.png" alt="Alfred's Image">
+
+
+        </div>
+      </section>
+      <!-- end of home tab -->
+    </header>
+
+
+
+    <!-- about tab -->
+    <section id="about">
+      <header>
+        <h2>About</h2>
+        <h5>
+          These are my experiences related to doing creative designs.
+        </h5>
+      </header>
+      <hr />
+      <br>
+      <ul>
+        <li>
+          <h5>Multimedia Specialist (2023)</h5>
+          <small><em>Care Channels, Inc.</em></small>
+          <div class="about-icons">
+            <!-- photoshop -->
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24"
+              class="svg">
+              <path
+                d="M 5 3 C 3.9 3 3 3.9 3 5 L 3 19 C 3 20.1 3.9 21 5 21 L 19 21 C 20.1 21 21 20.1 21 19 L 21 5 C 21 3.9 20.1 3 19 3 L 5 3 z M 7.7285156 8 L 9.5878906 8 C 11.913891 8 12.193359 10.140469 12.193359 10.605469 C 12.193359 12.465469 10.891641 13.115234 9.6816406 13.115234 L 8.5644531 13.115234 L 8.5644531 15.068359 C 8.5644531 15.530359 8.1905156 15.90625 7.7285156 15.90625 C 7.2665156 15.90625 6.890625 15.530359 6.890625 15.068359 L 6.890625 8.8378906 C 6.890625 8.3758906 7.2665156 8 7.7285156 8 z M 8.5644531 9.3027344 L 8.5644531 11.814453 L 9.6816406 11.814453 C 10.425641 11.814453 10.611328 11.256469 10.611328 10.605469 C 10.612328 9.9534687 10.333641 9.3027344 9.6816406 9.3027344 L 8.5644531 9.3027344 z M 15.169922 9.953125 C 15.995922 9.953125 16.593359 10.245266 16.943359 10.697266 C 17.295359 11.151266 16.966578 11.8125 16.392578 11.8125 L 16.296875 11.8125 C 16.026875 11.8125 15.759063 11.665109 15.664062 11.412109 C 15.581062 11.192109 15.417922 11.068359 15.169922 11.068359 C 14.890922 11.068359 14.611328 11.254953 14.611328 11.626953 C 14.611328 12.556953 17.308594 12.277219 17.308594 14.324219 C 17.308594 15.721219 15.913922 16 15.169922 16 C 14.284922 16 13.663688 15.637437 13.304688 15.148438 C 12.968687 14.691437 13.296281 14.046875 13.863281 14.046875 C 14.131281 14.046875 14.392188 14.190453 14.492188 14.439453 C 14.646187 14.825453 15.023922 14.882813 15.169922 14.882812 C 15.541922 14.882812 15.820313 14.696219 15.820312 14.324219 C 15.820312 13.487219 13.121094 13.581703 13.121094 11.720703 C 13.121094 10.325703 14.424922 9.953125 15.169922 9.953125 z">
+              </path>
+            </svg>
+
+            <!-- illustrator -->
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24"
+              class="svg">
+              <path
+                d="M 5 3 C 3.898438 3 3 3.898438 3 5 L 3 19 C 3 20.101563 3.898438 21 5 21 L 19 21 C 20.101563 21 21 20.101563 21 19 L 21 5 C 21 3.898438 20.101563 3 19 3 Z M 15.5 7.5 C 16 7.5 16.40625 7.90625 16.40625 8.40625 C 16.40625 8.90625 16 9.3125 15.5 9.3125 C 15 9.3125 14.59375 8.90625 14.59375 8.40625 C 14.59375 7.90625 15 7.5 15.5 7.5 Z M 9.6875 7.90625 L 11.3125 7.90625 L 14 16.40625 L 12.09375 16.40625 L 11.59375 14.6875 L 9.3125 14.6875 L 8.8125 16.40625 L 7 16.40625 Z M 14.6875 10.09375 L 16.40625 10.09375 L 16.40625 16.40625 L 14.6875 16.40625 Z M 10.5 10.1875 L 9.6875 13.1875 L 11.3125 13.1875 Z">
+              </path>
+            </svg>
+
+            <!-- premiere-pro -->
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24"
+              class="svg">
+              <path
+                d="M19,3H5C3.9,3,3,3.9,3,5v14c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V5C21,3.9,20.1,3,19,3z M9.79,9.302H8.674v2.512H9.79 c0.744,0,0.93-0.558,0.93-1.209C10.721,9.953,10.442,9.302,9.79,9.302z M9.79,13.116H8.674v2.054c0,0.458-0.372,0.83-0.83,0.83 H7.83C7.372,16,7,15.628,7,15.17V8.83C7,8.372,7.372,8,7.83,8h1.868c2.326,0,2.605,2.14,2.605,2.605 C12.302,12.465,11,13.116,9.79,13.116z M16.835,11.6c-0.074-0.008-0.473-0.047-0.551-0.047c-0.637,0-0.842,0.402-0.92,0.598v3.019 c0,0.458-0.372,0.83-0.83,0.83H14.53c-0.458,0-0.83-0.372-0.83-0.83v-4.435c0-0.406,0.329-0.735,0.735-0.735h0.143 c0.386,0,0.707,0.299,0.733,0.685l0,0.001c0.125-0.254,0.459-0.803,1.084-0.803c0.274,0,0.402,0.053,0.457,0.076L16.835,11.6z">
+              </path>
+            </svg>
+
+          </div>
+          <p>
+            I helped in making graphic posters, brochures, letter designs,
+            photo enhancements, and short video clips. During my stay, I did my
+            best to improve my creativity skills, particularly in graphics
+            designing and video editing.
+          </p>
+        </li>
+
+        <li>
+          <h5>Computer Engineer - Graduate (2022)</h5>
+          <small><em>
+              Major in Web Development<br />
+              Polytechnic University of the Philippines
+            </em>
+          </small>
+          <div class="about-icons">
+            <!-- html5 -->
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24"
+              class="svg">
+              <path
+                d="M 21 2 L 3 2 L 5 20 L 12 22 L 19 20 Z M 16.824219 8.082031 L 9.167969 8.082031 L 9.351563 10.261719 L 16.640625 10.261719 L 16.09375 16.699219 L 12 18.003906 L 11.960938 17.988281 L 7.914063 16.699219 L 7.691406 14.074219 L 9.675781 14.074219 L 9.761719 15.09375 L 12.023438 15.59375 L 14.242188 15.09375 L 14.480469 12.339844 L 7.542969 12.339844 L 7.007813 6 L 17.003906 6 Z">
+              </path>
+            </svg>
+            <!-- css3 -->
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24"
+              class="svg">
+              <path
+                d="M 3 2 L 5 20 L 11.992188 22 L 19 20 L 21 2 Z M 16.726563 10.347656 L 16.34375 16.589844 L 12.027344 18 L 7.710938 16.589844 L 7.546875 13.605469 L 9.734375 13.605469 L 9.789063 14.960938 L 12.027344 15.722656 L 14.269531 14.960938 L 14.433594 12.519531 L 9.625 12.519531 L 9.515625 10.347656 L 14.539063 10.347656 L 14.703125 8.175781 L 7.164063 8.175781 L 7 6.007813 L 17 6.007813 Z">
+              </path>
+            </svg>
+
+            <!-- javascript -->
+            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" class="svg">
+              <path
+                d="M0,24h24V0H0V24z M19.784,18.629c-0.255-0.961-2.251-1.185-3.616-2.205c-1.38-0.93-1.709-3.18-0.569-4.471c0.39-0.48,1.034-0.84,1.71-1.005l0.705-0.089c1.365-0.031,2.204,0.329,2.834,1.034c0.182,0.179,0.316,0.36,0.586,0.78c-0.721,0.449-0.721,0.449-1.755,1.125c-0.226-0.48-0.586-0.78-0.976-0.9c-0.6-0.18-1.365,0.014-1.515,0.66c-0.059,0.195-0.045,0.375,0.046,0.705c0.243,0.555,1.061,0.795,1.797,1.14c2.115,0.858,2.828,1.778,3.003,2.873l-0.046-0.067c0.166,0.945-0.045,1.56-0.074,1.65c-0.781,2.67-5.131,2.76-6.871,1.004c-0.36-0.42-0.6-0.629-0.81-1.109l1.83-1.051c0.495,0.75,0.944,1.156,1.755,1.336C18.914,20.174,20.024,19.799,19.784,18.629z M8.133,18.976c0.017,0,0.064,0.091,0.127,0.196c0.233,0.389,0.434,0.659,0.83,0.855c0.386,0.121,1.236,0.209,1.566-0.48c0.201-0.348,0.138-1.479,0.138-2.711c0-1.941,0.009-3.867,0.009-5.805h2.248l-0.004,0.056c0,2.07,0.012,4.125,0,6.179c0.005,1.276,0.113,2.416-0.397,3.346c-0.353,0.72-1.028,1.185-1.811,1.411c-1.203,0.27-2.352,0.105-3.207-0.405c-0.574-0.345-1.019-0.887-1.324-1.517L8.133,18.976z">
+              </path>
+            </svg>
+
+            <!-- python -->
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24"
+              class="svg">
+              <path
+                d="M 10 2 C 8.25 2 7 3.25 7 5 L 7 7 L 12 7 L 12 8 L 5 8 C 3.1875 8 2 9.28125 2 11 L 2 14 C 2 15.78125 3.1875 17 5 17 L 7 17 L 7 13 C 7 11.898438 7.898438 11 9 11 L 14 11 C 15.101563 11 16 10.101563 16 9 L 16 5 C 16 3.25 14.78125 2 13 2 Z M 9 4 C 9.550781 4 10 4.449219 10 5 C 10 5.550781 9.550781 6 9 6 C 8.449219 6 8 5.550781 8 5 C 8 4.449219 8.449219 4 9 4 Z M 17 6 L 17 10 C 17 11.101563 16.101563 12 15 12 L 10 12 C 8.898438 12 8 12.898438 8 14 L 8 18 C 8 19.75 9.21875 21 11 21 L 14 21 C 15.75 21 17 19.75 17 18 L 17 16 L 12 16 L 12 15 L 19 15 C 20.8125 15 22 13.71875 22 12 L 22 9 C 22 7.21875 20.8125 6 19 6 Z M 15 17 C 15.550781 17 16 17.449219 16 18 C 16 18.550781 15.550781 19 15 19 C 14.449219 19 14 18.550781 14 18 C 14 17.449219 14.449219 17 15 17 Z">
+              </path>
+            </svg>
+
+          </div>
+          <p>
+            I focused my skills on front-end development and in data science.
+            However, I have no actual work experience yet, so I’m still a
+            beginner. I’m looking forward to working with frameworks to further
+            improve my skills.
+          </p>
+        </li>
+
+        <li>
+          <h5>Online Stream Technical Director (2020-2021)</h5>
+          <small><em>
+              Gerry Roxas Leadership Awardees’ Student’ Society <br />JuanSpark
+              Youth Leaders <br />Performers’ Assembly for Relief Action
+            </em>
+          </small>
+          <div class="about-icons">
+            <!-- obs-studio -->
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24"
+              class="svg">
+              <path
+                d="M22,12c0,5.523-4.477,10-10,10S2,17.523,2,12S6.477,2,12,2S22,6.477,22,12z M17.802,9.089 c-0.751-0.421-1.557-0.637-2.366-0.678c-0.335,0.62-0.832,1.139-1.438,1.489c-0.598,0.345-1.29,0.525-2.036,0.494 c-0.293-0.012-0.591-0.043-0.865-0.11C9.503,9.832,8.334,8.372,8.352,6.638c0.018-1.872,1.413-3.468,3.213-3.745 c-0.139,0.001-0.274,0.015-0.418,0.024c-2.615,0.43-4.607,2.779-4.569,5.514c0.011,0.861,0.227,1.667,0.596,2.388 c0.705-0.02,1.402,0.151,2.008,0.501c0.598,0.345,1.1,0.855,1.446,1.516c0.136,0.259,0.253,0.511,0.331,0.773 c0.422,1.615-0.258,3.374-1.779,4.231c-1.63,0.92-3.71,0.51-4.85-0.91c0.07,0.12,0.15,0.23,0.23,0.35c1.68,2.05,4.71,2.6,7.06,1.2 c0.74-0.44,1.33-1.03,1.77-1.71c-0.37-0.6-0.57-1.29-0.57-1.99c0-0.69,0.19-1.38,0.59-2.01c0.157-0.247,0.305-0.464,0.488-0.658 c1.186-1.186,3.06-1.482,4.57-0.59c1.612,0.952,2.297,2.958,1.637,4.655c0.069-0.121,0.124-0.245,0.188-0.374 C21.228,13.323,20.189,10.424,17.802,9.089z">
+              </path>
+            </svg>
+
+            <!-- zoom -->
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24"
+              class="svg">
+              <path
+                d="M15.656,3H8.344C5.397,3,3,5.398,3,8.344v7.312C3,18.603,5.397,21,8.344,21h7.313C18.603,21,21,18.603,21,15.656V8.344	C21,5.398,18.603,3,15.656,3z M14,14.301C14,14.687,13.687,15,13.301,15H9.188C7.98,15,7,14.02,7,12.812V9.699	C7,9.313,7.313,9,7.699,9h4.113C13.02,9,14,9.98,14,11.188V14.301z M17,15l-2-2v-2l2-2V15z">
+              </path>
+            </svg>
+
+            <!-- facebook -->
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24"
+              class="svg">
+              <path
+                d="M19,3H5C3.895,3,3,3.895,3,5v14c0,1.105,0.895,2,2,2h7.621v-6.961h-2.343v-2.725h2.343V9.309 c0-2.324,1.421-3.591,3.495-3.591c0.699-0.002,1.397,0.034,2.092,0.105v2.43h-1.428c-1.13,0-1.35,0.534-1.35,1.322v1.735h2.7 l-0.351,2.725h-2.365V21H19c1.105,0,2-0.895,2-2V5C21,3.895,20.105,3,19,3z">
+              </path>
+            </svg>
+
+          </div>
+          <p>
+            During the pandemic, non-physical contact activities were temporarily
+            stopped to prevent the further spread of COVID-19 and so, various
+            organizations transitioned their programs to a digital system which
+            gave rise to the era of online webinars and online gigs. I was one of
+            the volunteers who provided technical support during the events of
+            said organizations.
+          </p>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- end of about tab -->
+
+    <!-- works tab -->
+    <section id="works">
+      <header>
+        <h2>Works</h2>
+        <h5>
+          I'm showcasing some of my outputs in graphics design. Some are personal, some are work-related.
+        </h5>
+
+      </header>
+      <hr>
+      <figure class="carousel-container">
+        <div class="wrapper">
+          <i id="btn-left" class="fa-solid fa-chevron-left"></i>
+          <ul class="carousel">
+            <li class="card">
+              <div class="img">
+                <img src="assets/1.jpg" alt="img-1" draggable="false">
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <img src="assets/2.jpg" alt="img-2" draggable="false">
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <img src="assets/3.jpg" alt="img-3" draggable="false">
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <img src="assets/4.jpg" alt="img-4" draggable="false">
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <img src="assets/5.jpg" alt="img-5" draggable="false">
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <img src="assets/6.jpg" alt="img-6" draggable="false">
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <img src="assets/7.jpg" alt="img-7" draggable="false">
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <img src="assets/8.jpg" alt="img-8" draggable="false">
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <img src="assets/9.jpg" alt="img-9" draggable="false">
+              </div>
+            </li>
+          </ul>
+          <i id="btn-right" class="fa-solid fa-chevron-right"></i>
+        </div>
+      </figure>
+    </section>
+    <!-- end of works tab -->
+
+    <!-- services tab -->
+    <section id="services">
+      <header>
+        <h2>Services</h2>
+        <h5 class="subtitle">These are the things I can do for you.</h5>
+      </header>
+
+
+      <hr>
+
+      <section class="services-wrapper">
+
+        <div class="top">
+          <div class="item">
+            <a href="#">
+              <i class="fa-brands fa-chrome" aria-hidden="true"></i>
+            </a>
+            <h5>Web Development</h5>
+            <p>Design responsive websites</p>
+          </div>
+          <div class="item">
+            <a href="#">
+              <i class="fa-solid fa-paintbrush" aria-hidden="true"></i>
+            </a>
+            <h5>Multimedia Design</h5>
+            <p>Edit graphic and video designs</p>
+          </div>
+          <div class="item">
+            <a href="#">
+              <i class="fa-solid fa-users" aria-hidden="true"></i>
+            </a>
+            <h5>Social Media Management</h5>
+            <p>Assist in Social Media handles</p>
+          </div>
+        </div>
+
+        <div class="bottom">
+
+          <div class="left" id="services-logo">
+            <div class="logo-big">
+              <img src="assets/alfie-logo-big.png">
+            </div>
+
+
+            <div class="socials-wrapper">
+              <h6>Contact me:</h6>
+
+              <div class="gmail">
+                <a href="mailto:johnalfredpinero@gmail.com"><i class="fa-solid fa-envelope" id="social-icon"></i></a>
+                <a id="social-link" href="mailto:johnalfredpinero@gmail.com">johnalfredpinero@gmail.com</a>
+              </div>
+
+              <div class="linkedin">
+                <a href="https://www.linkedin.com/in/johnalfredpiñero"><i class="fa-brands fa-linkedin"
+                    id="social-icon"></i></a>
+                <a id="social-link" href="https://www.linkedin.com/in/johnalfredpiñero">@johnalfredpiñero</a>
+              </div>
+
+              <div class="facebook">
+                <a href="https://www.facebook.com/AlfieArtsPH"><i class="fa-brands fa-facebook"
+                    id="social-icon"></i></a>
+                <a id="social-link" href="https://www.facebook.com/AlfieArtsPH">@AlfieArtsPH</a>
+              </div>
+
+
+              <div class="github">
+                <a href="https://github.com/alfred0017" id="social-icon"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/alfred0017" id="social-link">@alfred0017</a>
+              </div>
+
+            </div>
+
+
+            <div class="resume">
+              <a href="img/Piñero - Resume.pdf" download class="btn btn-1">Download CV</a>
+            </div>
+
+
+          </div>
+
+          <div class="right">
+            <h6>If interested, please message me here:</h6>
+            <form name="submit-to-google-sheet">
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="email" name="email" placeholder="Email" required>
+              <textarea name="message" rows="6" placeholder="Message"></textarea>
+              <button type="submit" class="btn btn-2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+
+        </div>
+      </section>
+    </section>
+    <!-- end of services -->
+
+    <!-- copyright tab -->
+    <footer class="copyright">
+      <div class="left" id="footer-logo">
+        <div class="logo-big">
+          <img src="assets/alfie-logo-big.png">
+        </div>
+
+        <div class="socials-wrapper">
+          <h6>Contact me:</h6>
+
+          <div class="gmail">
+            <a href="mailto:johnalfredpinero@gmail.com"><i class="fa-solid fa-envelope" id="social-icon"></i></a>
+            <a id="social-link" href="mailto:johnalfredpinero@gmail.com">johnalfredpinero@gmail.com</a>
+          </div>
+
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/in/johnalfredpiñero"><i class="fa-brands fa-linkedin"
+                id="social-icon"></i></a>
+            <a id="social-link" href="https://www.linkedin.com/in/johnalfredpiñero">@johnalfredpiñero</a>
+          </div>
+
+          <div class="facebook">
+            <a href="https://www.facebook.com/AlfieArtsPH"><i class="fa-brands fa-facebook" id="social-icon"></i></a>
+            <a id="social-link" href="https://www.facebook.com/AlfieArtsPH">@AlfieArtsPH</a>
+          </div>
+
+
+          <div class="github">
+            <a href="https://github.com/alfred0017" id="social-icon"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/alfred0017" id="social-link">@alfred0017</a>
+          </div>
+
+        </div>
+
+        <div class="resume">
+          <a href="img/Piñero - Resume.pdf" download class="btn btn-1">Download CV</a>
+        </div>
+
+
+      </div>
+      <small>©2023 John Alfred Piñero. All Rights Reserved. Made with <i class="fas fa-heart"></i></small>
+    </footer>
+
+  </div>
+  <!-- end of container -->
+</body>
+
+</html>
