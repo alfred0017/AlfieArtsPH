@@ -1,2 +1,2 @@
 # test_portfolio
-just testing github
+This is used to track my personal progress in Web Development
