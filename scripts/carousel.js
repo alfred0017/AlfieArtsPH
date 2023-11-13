@@ -22,11 +22,27 @@ carouselChildren.slice(0, cardPerView).forEach(card =>{
 
 
 //add event listeners for left and right buttons
-arrowBtns.forEach(btn =>{
-    btn.addEventListener("click",()=>{
-        carousel.scrollLeft += btn.id === "left" ? -firstCardWidth : firstCardWidth;
-    })
-})
+arrowBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        const scrollIncrement = btn.id === "btn-left" ? -firstCardWidth : firstCardWidth;
+        carousel.scrollBy({ left: scrollIncrement, behavior: 'smooth' });
+    });
+});
+
+// arrowBtns.forEach(btn =>{
+//     btn.addEventListener("click",()=>{
+//         // carousel.scrollLeft += btn.id === "left" ? -firstCardWidth : firstCardWidth;
+//         carousel.scrollLeft += btn.id === "left" ? firstCardWidth : -firstCardWidth;
+
+//     })
+// })
+
+// arrowBtns.forEach(btn => {
+//     btn.addEventListener("click", () => {
+//         const scrollIncrement = btn.id === "left" ? -firstCardWidth : firstCardWidth;
+//         carousel.scrollBy({ left: scrollIncrement, behavior: 'smooth' });
+//     });
+// });
 
 const dragStart = (e) => {
     isDragging = true;

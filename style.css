@@ -216,6 +216,7 @@ hr {
 h5,
 h4 {
   color: #fdfefe;
+
 }
 
 #about p {
@@ -223,6 +224,7 @@ h4 {
   text-align: justify;
   text-justify: inter-word;
   color: #fdfefe;
+  line-height: 30px;
 }
 
 /* for bullet lines */
@@ -232,6 +234,7 @@ h4 {
   margin: 0;
   padding: 0;
   position: relative;
+
 }
 
 #about ul::before {
@@ -429,30 +432,35 @@ svg {
 
 /* services items */
 
-.services-wrapper .top {
+
+
+.services-wrapper .top{
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
+margin-bottom: 20px;
+}
+
+.services-wrapper .top .item{
   text-align: center;
-  color: white;
-  margin-bottom: 5%;
-}
-
-.services-wrapper .top .item h5 {
-  color: rgba(255, 195, 0);
-}
-
-.services-wrapper .top .item {
+  width: 400px;
+  /* height: 200px; */
   padding: 20px;
   border-radius: 20px;
+  /* margin-bottom: 20px; */
+  margin-top:20px;
   color: white;
   box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
   border: 2px solid rgba(255, 195, 0);
   transition: 0.5s ease-in-out;
   cursor: pointer;
   text-justify: inter-word;
-  width: calc(100% - 20px);
-  margin: 20px;
+}
+
+
+.services-wrapper .top .item h5 {
+  color: rgba(255, 195, 0);
 }
 
 .services-wrapper .top .item a i {
@@ -466,17 +474,18 @@ svg {
 
 .services-wrapper .top .item:hover {
   transform: translatey(-10px);
-  border: 2px solid rgba(255, 195, 0);
+  /* border: 2px solid rgba(255, 195, 0); */
 }
 
 /*--- contacts and form ----*/
 
 .services-wrapper .bottom {
   display: flex;
+  align-items: flex-end;
 }
 .services-wrapper .bottom .left {
   order: 1;
-  flex-basis: 35%;
+  flex-basis: 40%;
 }
 
 .services-wrapper .bottom .left .logo-big {
@@ -508,12 +517,12 @@ svg {
 .socials-wrapper a {
   text-decoration: none;
   color: white;
-  font-size: 1rem;
+  font-size: 14px;
 }
 
 .socials-wrapper #social-icon {
   margin-right: 5px;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .gmail,
@@ -537,7 +546,7 @@ svg {
 
 /* form */
 .services-wrapper .bottom .right {
-  flex-basis: 65%;
+  flex-basis: 60%;
   width: 100%;
   order: 2;
 }
@@ -700,17 +709,18 @@ nav .fa-solid {
     font-weight: 600;
   }
 
+
   /* home */
   #home {
     min-height: 50vh;
   }
   #home .left {
-    flex-basis: 50%;
+    flex-basis: 60%;
   }
   #home .right {
     order: 1;
     justify-content: center;
-    flex-basis: 50%;
+    flex-basis: 40%;
   }
 
   /*carousel*/
@@ -718,7 +728,15 @@ nav .fa-solid {
   .wrapper .carousel {
     grid-auto-columns: calc((100% / 2) - 10px); /* Two columns per slide */
   }
+
+  /* services */
+
+  .services-wrapper .item {
+    max-width:200px;
+    height: 200px;
+  }
 }
+
 
 /* for mobile phones  */
 @media screen and (max-width: 600px) {
@@ -813,19 +831,23 @@ nav .fa-solid {
   }
 
   /* services */
-  .services-wrapper .top {
+
+  .services-wrapper .item {
+    max-width:80vw;
+
+    display:flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    
   }
-  .services-wrapper .top .item {
-    height: (calc(100%-20px));
-  }
+
+
   /*contacts*/
 
   .services-wrapper .bottom {
     flex-direction: column;
   }
+
   .services-wrapper .bottom .right {
     order: 1;
     flex-basis: initial;
@@ -834,7 +856,7 @@ nav .fa-solid {
     text-align: left;
   }
   .services-wrapper .bottom .right form {
-    text-align: right;
+    text-align: center;
     margin-bottom: 20px;
   }
 
@@ -844,6 +866,10 @@ nav .fa-solid {
   }
 
   /* footer */
+  .copyright #footer{
+    display: flex;
+    align-self: center;
+  }
   .copyright #footer-logo {
     display: flex;
     flex-direction: column;
@@ -851,8 +877,8 @@ nav .fa-solid {
   }
 
   .copyright #footer-logo .logo-big {
-    width: 100%;
-    order: 2;
+    width: calc(100%/2);
+    order: 1;
   }
 
   .copyright #footer-logo .logo-big img {
@@ -862,10 +888,10 @@ nav .fa-solid {
 
   .socials-wrapper {
     margin-top: 0;
-    margin-bottom: 10px;
+   
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     order: 3;
   }
   .socials-wrapper h6 {
@@ -879,18 +905,21 @@ nav .fa-solid {
     color: #ffc300;
   }
 
-  #social-link {
-    display: none;
-  }
+
 
   .resume {
     margin-bottom: 10px;
     order: 1;
   }
 
+  .resume a{
+    font-size: 10px;
+  }
+
   .copyright .socials-wrapper a {
     font-size: 10px;
   }
+
 }
 
 @media screen and (max-width: 320px) {
@@ -930,6 +959,7 @@ nav .fa-solid {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    padding-top: 15%;
   }
   #home.left {
     flex-basis: initial;
@@ -960,24 +990,31 @@ nav .fa-solid {
 
   /* services */
 
-  .services-wrapper .top .item {
-    margin-top: 20px;
-  }
+  /* .services-wrapper .top .item{
+    background: red;
+  } */
 
   /* contacts */
 
-  .services-wrapper .bottom .right form {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+  
 
   /* footer */
+ .copyright .socials-wrapper{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+ }
 
+ 
   .copyright #footer-logo .resume {
     display: none;
   }
 
   small {
     font-size: 9px;
+  }
+
+  .copyright #social-link{
+    display: none;
   }
 }
