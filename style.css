@@ -1018,3 +1018,37 @@ nav .fa-solid {
     display: none;
   }
 }
+
+
+
+::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+  background-color: transparent; 
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffc300; /* Set the color of the scrollbar thumb */
+  border-radius: 6px; /* Optional: Add rounded corners to the scrollbar thumb */
+
+
+}
+
+::-webkit-scrollbar-track {
+  display: none; /* Hide the scrollbar track */
+}
+/* firefox */
+body {
+  scrollbar-width: thin; /* Set the width of the scrollbar */
+}
+
+body {
+  scrollbar-color: #ffc300 transparent; /* Set the color of the scrollbar thumb and make the track transparent */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffc300 ; /* Set the color of the scrollbar thumb */
+  border-radius: 6px; /* Optional: Add rounded corners to the scrollbar thumb */
+}
+
+
