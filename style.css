@@ -170,6 +170,7 @@ nav ul li a:hover {
 #home .left .socials-wrapper a i {
   font-size: 25px;
   color: #001d3d;
+  margin-right:5px;
 }
 #home .left .socials-wrapper a i:hover,
 #home .left a i:hover {
