@@ -520,7 +520,7 @@ margin-bottom: 20px;
   font-size: 14px;
 }
 
-.socials-wrapper #social-icon {
+.socials-wrapper .social-icon {
   margin-right: 5px;
   font-size: 18px;
 }
@@ -897,11 +897,11 @@ nav .fa-solid {
   .socials-wrapper h6 {
     display: none;
   }
-  #social-icon {
+  .social-icon {
     font-size: 25px; /* width: 100px; */
   }
 
-  #social-icon:hover {
+  .social-icon:hover {
     color: #ffc300;
   }
 
@@ -1014,7 +1014,7 @@ nav .fa-solid {
     font-size: 9px;
   }
 
-  .copyright #social-link{
+  .copyright .social-link{
     display: none;
   }
 }

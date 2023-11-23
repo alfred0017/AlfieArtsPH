@@ -2,17 +2,18 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="UTF-8">
   <meta name="description"
     content="This is Alfred's personal portfolio to showcase his skills in web development and multimedia arts">
   <!-- css files for styling -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
   <!-- css file for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- to add icon at the tab -->
   <link rel="icon" type="image/x-icon" href="assets/alfie-icon.ico">
@@ -34,19 +35,19 @@
   <div class="container">
     <header>
       <!-- navigation panel -->
-      <section id="navbar">
-        <nav>
-          <a href="#"><img class="logo" src="assets/alfie-logo-small.png" alt="Logo" /></a>
-          <ul id="sidenav">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Experiences</a></li>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#services" class="active">Services</a></li>
-            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-          </ul>
-          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-      </section>
+
+      <nav id="navbar">
+        <a href="#"><img class="logo" src="assets/alfie-logo-small.png" alt="Logo" /></a>
+        <ul id="sidenav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Experiences</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#services" class="active">Services</a></li>
+          <li><i class="fa-solid fa-xmark" onclick="closemenu()"></i></li>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+
 
       <!-- home tab -->
       <section id="home">
@@ -58,21 +59,22 @@
           <div class="socials-wrapper">
 
             <div class="gmail">
-              <a href="mailto:johnalfredpinero@gmail.com"><i class="fa-solid fa-envelope" id="social-icon"></i></a>
+              <a href="mailto:johnalfredpinero@gmail.com"><i class="fa-solid fa-envelope" class="social-icon"></i></a>
             </div>
 
             <div class="linkedin">
               <a href="https://www.linkedin.com/in/johnalfredpiñero"><i class="fa-brands fa-linkedin"
-                  id="social-icon"></i></a>
+                  class="social-icon"></i></a>
             </div>
 
             <div class="facebook">
-              <a href="https://www.facebook.com/AlfieArtsPH"><i class="fa-brands fa-facebook" id="social-icon"></i></a>
+              <a href="https://www.facebook.com/AlfieArtsPH"><i class="fa-brands fa-facebook"
+                  class="social-icon"></i></a>
             </div>
 
 
             <div class="github">
-              <a href="https://github.com/alfred0017" id="social-icon"><i class="fa-brands fa-github"></i></a>
+              <a href="https://github.com/alfred0017" class="social-icon"><i class="fa-brands fa-github"></i></a>
             </div>
 
           </div>
@@ -101,7 +103,7 @@
           These are my experiences related to doing creative designs.
         </h5>
       </header>
-      <hr />
+      <hr>
       <br>
       <ul>
         <li>
@@ -144,7 +146,7 @@
         <li>
           <h5>Computer Engineer - Graduate (2022)</h5>
           <small><em>
-              Major in Web Development<br />
+              Major in Web Development<br>
               Polytechnic University of the Philippines
             </em>
           </small>
@@ -189,8 +191,8 @@
         <li>
           <h5>Online Stream Technical Director (2020-2021)</h5>
           <small><em>
-              Gerry Roxas Leadership Awardees’ Student’ Society <br />JuanSpark
-              Youth Leaders <br />Performers’ Assembly for Relief Action
+              Gerry Roxas Leadership Awardees’ Student’ Society <br>JuanSpark
+              Youth Leaders <br>Performers’ Assembly for Relief Action
             </em>
           </small>
           <div class="about-icons">
@@ -354,7 +356,7 @@
 
           <div class="left" id="services-logo">
             <div class="logo-big">
-              <img src="assets/alfie-logo-big.png">
+              <img src="assets/alfie-logo-big.png" alt="Alfie's Big Logo">
             </div>
 
 
@@ -363,25 +365,25 @@
 
               <div class="gmail">
                 <a href="mailto:johnalfredpinero@gmail.com"><i class="fa-solid fa-envelope" id="social-icon"></i></a>
-                <a id="social-link" href="mailto:johnalfredpinero@gmail.com">johnalfredpinero@gmail.com</a>
+                <a class="social-link" href="mailto:johnalfredpinero@gmail.com">johnalfredpinero@gmail.com</a>
               </div>
 
               <div class="linkedin">
                 <a href="https://www.linkedin.com/in/johnalfredpiñero"><i class="fa-brands fa-linkedin"
-                    id="social-icon"></i></a>
-                <a id="social-link" href="https://www.linkedin.com/in/johnalfredpiñero">@johnalfredpiñero</a>
+                    class="social-icon"></i></a>
+                <a class="social-link" href="https://www.linkedin.com/in/johnalfredpiñero">@johnalfredpiñero</a>
               </div>
 
               <div class="facebook">
                 <a href="https://www.facebook.com/AlfieArtsPH"><i class="fa-brands fa-facebook"
-                    id="social-icon"></i></a>
-                <a id="social-link" href="https://www.facebook.com/AlfieArtsPH">@AlfieArtsPH</a>
+                    class="social-icon"></i></a>
+                <a class="social-link" href="https://www.facebook.com/AlfieArtsPH">@AlfieArtsPH</a>
               </div>
 
 
               <div class="github">
-                <a href="https://github.com/alfred0017" id="social-icon"><i class="fa-brands fa-github"></i></a>
-                <a href="https://github.com/alfred0017" id="social-link">@alfred0017</a>
+                <a href="https://github.com/alfred0017" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/alfred0017" class="social-link">@alfred0017</a>
               </div>
 
             </div>
@@ -421,25 +423,25 @@
           <h6>Contact me:</h6>
 
           <div class="gmail">
-            <a href="mailto:johnalfredpinero@gmail.com"><i class="fa-solid fa-envelope" id="social-icon"></i></a>
-            <a id="social-link" href="mailto:johnalfredpinero@gmail.com">johnalfredpinero@gmail.com</a>
+            <a href="mailto:johnalfredpinero@gmail.com"><i class="fa-solid fa-envelope" class="social-icon"></i></a>
+            <a class="social-link" href="mailto:johnalfredpinero@gmail.com">johnalfredpinero@gmail.com</a>
           </div>
 
           <div class="linkedin">
             <a href="https://www.linkedin.com/in/johnalfredpiñero"><i class="fa-brands fa-linkedin"
-                id="social-icon"></i></a>
-            <a id="social-link" href="https://www.linkedin.com/in/johnalfredpiñero">@johnalfredpiñero</a>
+                class="social-icon"></i></a>
+            <a class="social-link" href="https://www.linkedin.com/in/johnalfredpiñero">@johnalfredpiñero</a>
           </div>
 
           <div class="facebook">
-            <a href="https://www.facebook.com/AlfieArtsPH"><i class="fa-brands fa-facebook" id="social-icon"></i></a>
-            <a id="social-link" href="https://www.facebook.com/AlfieArtsPH">@AlfieArtsPH</a>
+            <a href="https://www.facebook.com/AlfieArtsPH"><i class="fa-brands fa-facebook" class="social-icon"></i></a>
+            <a class="social-link" href="https://www.facebook.com/AlfieArtsPH">@AlfieArtsPH</a>
           </div>
 
 
           <div class="github">
-            <a href="https://github.com/alfred0017" id="social-icon"><i class="fa-brands fa-github"></i></a>
-            <a href="https://github.com/alfred0017" id="social-link">@alfred0017</a>
+            <a href="https://github.com/alfred0017" class="social-icon"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/alfred0017" class="social-link">@alfred0017</a>
           </div>
 
         </div>
